@@ -1,12 +1,12 @@
 const form = document.getElementById('sizePicker');
 let canvas = document.getElementById('pixelCanvas');
 
+//creates a grid that the user can interact with :)
 function makeGrid() {
-    //Define user input (Height and Width)
+    //Storing grid Height and Width value
     const h = document.getElementById('inputHeight').value;
     const w = document.getElementById('inputWidth').value;
 
-    console.log(h, w);
     //create the table based on user input.
     for (let row = 0; row < h; row++) {
         let tr = document.createElement('tr');
